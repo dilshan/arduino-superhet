@@ -1,0 +1,3 @@
+[submodule "arduino/arduinosuperhet/Si5351Arduino"]
+	path = arduino/arduinosuperhet/Si5351Arduino
+	url = https://github.com/etherkit/Si5351Arduino.git

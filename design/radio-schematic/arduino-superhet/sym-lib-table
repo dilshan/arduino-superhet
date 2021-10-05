@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name arduino-superhet)(type Legacy)(uri ${KIPRJMOD}/arduino-superhet.lib)(options "")(descr ""))
+)

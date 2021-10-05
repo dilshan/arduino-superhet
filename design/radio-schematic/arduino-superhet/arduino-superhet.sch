@@ -1,0 +1,291 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Arduino Superheterodyne Receiver"
+Date "2021-10-05"
+Rev "1.0.0"
+Comp "Dilshan R Jayakody"
+Comment1 "jayakody2000lk@gmail.com"
+Comment2 "http://jayakody2000lk.blogspot.com"
+Comment3 "https://github.com/dilshan/arduino-superhet"
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R3 A1
+U 1 1 61582237
+P 3550 3150
+F 0 "A1" H 3200 4100 50  0000 C CNN
+F 1 "Arduino UNO " H 3550 4350 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 3550 3150 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 3550 3150 50  0001 C CNN
+	1    3550 3150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3050 2550
+NoConn ~ 3050 2650
+$Comp
+L Device:Rotary_Encoder_Switch SW1
+U 1 1 61585516
+P 2250 2850
+F 0 "SW1" H 2250 3217 50  0000 C CNN
+F 1 "EC11-S" H 2250 3126 50  0000 C CNN
+F 2 "" H 2100 3010 50  0001 C CNN
+F 3 "~" H 2250 3110 50  0001 C CNN
+	1    2250 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2950 1850 2950
+Wire Wire Line
+	1850 2950 1850 3150
+Wire Wire Line
+	1950 2750 1750 2750
+Wire Wire Line
+	1750 2750 1750 3300
+Wire Wire Line
+	1750 3300 2700 3300
+Wire Wire Line
+	2700 3300 2700 2850
+Wire Wire Line
+	2700 2850 2550 2850
+Wire Wire Line
+	1750 3300 1750 4350
+Wire Wire Line
+	3450 4350 3450 4250
+Connection ~ 1750 3300
+NoConn ~ 3050 3050
+NoConn ~ 3050 3150
+NoConn ~ 3050 3250
+NoConn ~ 3050 3350
+NoConn ~ 3050 3450
+NoConn ~ 3050 3550
+NoConn ~ 3050 3650
+NoConn ~ 3050 3750
+NoConn ~ 3050 3850
+NoConn ~ 4050 2550
+NoConn ~ 4050 2750
+NoConn ~ 4050 2950
+NoConn ~ 4050 3150
+NoConn ~ 4050 3250
+NoConn ~ 4050 3350
+NoConn ~ 4050 3450
+NoConn ~ 4050 3850
+NoConn ~ 4050 3950
+Wire Wire Line
+	3050 2750 2550 2750
+Wire Wire Line
+	1750 4350 3450 4350
+Wire Wire Line
+	1850 3150 2900 3150
+Wire Wire Line
+	2900 3150 2900 2950
+Wire Wire Line
+	2900 2950 3050 2950
+Wire Wire Line
+	2550 2950 2800 2950
+Wire Wire Line
+	2800 2950 2800 2850
+Wire Wire Line
+	2800 2850 3050 2850
+$Comp
+L arduino-superhet:Si5351-Module A2
+U 1 1 6158D65A
+P 5350 3750
+F 0 "A2" H 5000 4250 50  0000 C CNN
+F 1 "Si5351" H 5750 3250 50  0000 C CNN
+F 2 "" H 5700 3800 50  0001 C CNN
+F 3 "" H 5700 3800 50  0001 C CNN
+	1    5350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4250 3550 4350
+Wire Wire Line
+	3550 4350 5350 4350
+Wire Wire Line
+	5350 4350 5350 4300
+Wire Wire Line
+	3750 2150 3750 2100
+Wire Wire Line
+	3750 2100 5350 2100
+Wire Wire Line
+	5350 2100 5350 3200
+Wire Wire Line
+	4050 3550 4850 3550
+Wire Wire Line
+	4050 3650 4850 3650
+NoConn ~ 4850 3800
+NoConn ~ 4850 3900
+NoConn ~ 4850 4000
+$Comp
+L Device:Antenna AE1
+U 1 1 61591B20
+P 6450 2150
+F 0 "AE1" H 6530 2139 50  0000 L CNN
+F 1 "Antenna" H 6530 2048 50  0000 L CNN
+F 2 "" H 6450 2150 50  0001 C CNN
+F 3 "~" H 6450 2150 50  0001 C CNN
+	1    6450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduino-superhet:RF-FRONT-DET A3
+U 1 1 6159336C
+P 7650 2950
+F 0 "A3" H 6950 3450 50  0000 C CNN
+F 1 "RF-FRONT-DET" H 8100 2350 50  0000 C CNN
+F 2 "" H 7350 3100 50  0001 C CNN
+F 3 "" H 7350 3100 50  0001 C CNN
+	1    7650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4250 3650 4550
+Wire Wire Line
+	3650 4550 6100 4550
+Wire Wire Line
+	6000 3250 6000 3600
+Wire Wire Line
+	6000 3600 5950 3600
+Wire Wire Line
+	6000 3250 6800 3250
+Wire Wire Line
+	6700 3350 6700 3700
+Wire Wire Line
+	6700 3700 7650 3700
+Wire Wire Line
+	7650 3700 7650 3600
+Wire Wire Line
+	6700 3350 6800 3350
+NoConn ~ 5950 3750
+NoConn ~ 5950 3900
+$Comp
+L arduino-superhet:455K-IF-AMP A4
+U 1 1 6159A253
+P 7650 4900
+F 0 "A4" H 8300 5350 50  0000 C CNN
+F 1 "455K-IF-AMP" H 7200 4450 50  0000 C CNN
+F 2 "" H 7200 5050 50  0001 C CNN
+F 3 "" H 7200 5050 50  0001 C CNN
+	1    7650 4900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2850 8750 2850
+Wire Wire Line
+	8750 2850 8750 4750
+Wire Wire Line
+	8750 4750 8450 4750
+Wire Wire Line
+	8500 2750 8850 2750
+Wire Wire Line
+	8850 2750 8850 4850
+Wire Wire Line
+	8850 4850 8450 4850
+Wire Wire Line
+	6850 4850 6550 4850
+Wire Wire Line
+	6550 4850 6550 3000
+Wire Wire Line
+	6550 3000 6800 3000
+Wire Wire Line
+	6800 2900 6450 2900
+Wire Wire Line
+	6450 2900 6450 4950
+Wire Wire Line
+	6450 4950 6850 4950
+$Comp
+L Connector:AudioJack2 J1
+U 1 1 615A0DD8
+P 9300 3150
+F 0 "J1" H 9120 3133 50  0000 R CNN
+F 1 "3.5mm Jack Socket" H 9120 3224 50  0000 R CNN
+F 2 "" H 9300 3150 50  0001 C CNN
+F 3 "~" H 9300 3150 50  0001 C CNN
+	1    9300 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8500 3150 9100 3150
+Wire Wire Line
+	8500 3250 9100 3250
+$Comp
+L Connector:Jack-DC J2
+U 1 1 615A473B
+P 9400 4300
+F 0 "J2" H 9170 4350 50  0000 R CNN
+F 1 "DC Jack Socket" H 9170 4259 50  0000 R CNN
+F 2 "" H 9450 4260 50  0001 C CNN
+F 3 "~" H 9450 4260 50  0001 C CNN
+	1    9400 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 5400 7650 5550
+Wire Wire Line
+	7650 5550 9000 5550
+Wire Wire Line
+	9000 5550 9000 4400
+Wire Wire Line
+	9000 4400 9100 4400
+Wire Wire Line
+	7650 4400 7650 4200
+Wire Wire Line
+	7650 4200 9000 4200
+Wire Wire Line
+	7650 2400 7650 2300
+Wire Wire Line
+	7650 2300 9000 2300
+Wire Wire Line
+	9000 2300 9000 4200
+Connection ~ 9000 4200
+Wire Wire Line
+	9000 4200 9100 4200
+$Comp
+L power:GND #PWR01
+U 1 1 615AD5ED
+P 3650 4700
+F 0 "#PWR01" H 3650 4450 50  0001 C CNN
+F 1 "GND" H 3655 4527 50  0000 C CNN
+F 2 "" H 3650 4700 50  0001 C CNN
+F 3 "" H 3650 4700 50  0001 C CNN
+	1    3650 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 615AD9AC
+P 7650 5700
+F 0 "#PWR02" H 7650 5450 50  0001 C CNN
+F 1 "GND" H 7655 5527 50  0000 C CNN
+F 2 "" H 7650 5700 50  0001 C CNN
+F 3 "" H 7650 5700 50  0001 C CNN
+	1    7650 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4700 3650 4550
+Connection ~ 3650 4550
+Wire Wire Line
+	7650 5700 7650 5550
+Connection ~ 7650 5550
+NoConn ~ 8450 5050
+NoConn ~ 3450 2150
+NoConn ~ 3650 2150
+Wire Wire Line
+	6450 2350 6450 2650
+Wire Wire Line
+	6450 2650 6800 2650
+Text Notes 9200 3000 0    50   ~ 0
+AUDIO OUTPUT
+Text Notes 9200 4100 0    50   ~ 0
+6V - 9V (DC IN)
+Wire Wire Line
+	6700 3350 6100 3350
+Wire Wire Line
+	6100 3350 6100 4550
+Connection ~ 6700 3350
+$EndSCHEMATC

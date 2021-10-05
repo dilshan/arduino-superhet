@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name if-amp-455)(type KiCad)(uri ${KIPRJMOD}/if-amp-455.pretty)(options "")(descr ""))
+)
