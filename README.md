@@ -4,7 +4,7 @@ In this project, we will upgrade a traditional shortwave [superheterodyne receiv
 
 In this upgrade, we enhanced the local oscillator with [Si5351 clock generator module](https://s.click.aliexpress.com/e/_9iD0bV) and Arduino control circuit. Compared to the [old design](http://jayakody2000lk.blogspot.com/2015/03/two-transistor-superheterodyne.html), this new receiver uses an improved version of an intermediate frequency amplifier with 3 I.F transformers.
 
-[![Arduino Superheterodyne Receiver](https://raw.githubusercontent.com/dilshan/arduino-superhet/main/resources/arduino-superhet-youtube.jpg)](https://github.com/dilshan/arduino-superhet)
+[![Arduino Superheterodyne Receiver](https://raw.githubusercontent.com/dilshan/arduino-superhet/main/resources/arduino-superhet-youtube.jpg)](https://www.youtube.com/watch?v=8Wvycy0YoPc)
 
 In this new design, we divide this receiver into several blocks, which include, mixer with a detector, a local oscillator, and an I.F amplifier. The I.F amplifier builds into one PCB. The filter stage, mixer, and detector stages place in another PCB.
 
